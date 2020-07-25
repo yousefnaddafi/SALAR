@@ -1,0 +1,20 @@
+
+
+{% extends 'shared/site.html' %}
+{% load static %}
+{% block body %}
+
+
+      <div id="main">
+            <h1 style="text-align: center;font-weight: bold;"> {{product.name}}  </h1> 
+            <p> {{product.price}} </p> 
+            <h2> {{product.description}} </h2> 
+      </div>
+
+      <h5> {{ product.id }} </h5>
+      <div style="text-align: center;">
+            <img style="height:5%;width: 5%;"  src='/{{product.photo}}'>
+      </div>
+
+    
+{% endblock %}

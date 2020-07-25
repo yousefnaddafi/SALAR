@@ -1,0 +1,10 @@
+{% extends 'shared/site.html' %}
+{% block body %}
+   {% for product in product_list %}
+      <h1> {{ product.name }} </h1>
+</br>
+       {{ product.price }}
+
+   {% endfor %}
+{% include 'partials/pagination.html'%}
+{% endblock %}
